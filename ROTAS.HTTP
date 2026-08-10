@@ -1,0 +1,23 @@
+POST http://localhost:3000/adicionar-filme
+Content-Type: application/json
+
+{
+    "title": "National geographic o filme",
+    "genre": "natureza",
+    "duration": 15,
+    "ageRating": "18"
+}
+
+###
+PUT http://localhost:3000/editar-filme/4
+Content-Type: application/json
+
+{
+    "title": "National geographic o filme",
+    "genre": "natureza",
+    "duration": 15,
+    "ageRating": "18"
+}
+
+###
+DELETE http://localhost:3000/deletar-filme/4
