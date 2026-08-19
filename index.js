@@ -14,7 +14,17 @@ const database = mysql.createPool({
 })
 
 app.get("/", (request,response) => {
-    response.json({ message:"Backend funfano" })
+    const selectCommand = `SELECT * FROM filmes_MatheusSouza`
+    
+    database.query(selectCommand, (err, filmes) => {
+        if (err) {
+            console.log(err)
+            response.json({ message: "Erro ao buscar filmes" })
+            return
+        }
+
+        response.json(filmes)
+    })
 })
 
 app.post("/adicionar-filme", (request, response) => {
