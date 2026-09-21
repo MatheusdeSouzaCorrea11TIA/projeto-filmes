@@ -15,7 +15,7 @@ async function cadastrarFilme(event) {
 
     console.log(dataSend)
 
-    const response = await fetch("https://projeto-filmes-backend-16i9n5m3i.vercel.app/adicionar-filme", {
+    const response = await fetch("https://projeto-filmes-backend-16i9n5m3i.vercel.app/adicionar-filme/", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
