@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrar.css">
+    <script src="./cadastrar.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Filmes</h1>
+        <p>Cadastre um novo filme</p>
+
+        <form>
+            <div class="input-group">
+                <label>Título do Filme</label>
+                <input id="titulo" type="text" placeholder="Digite o título">
+            </div>
+
+            <div class="input-group">
+                <label>Gênero</label>
+                <input id="genero" type="text" placeholder="Ex: Ação, Terror, Comédia">
+            </div>
+
+            <div class="input-group">
+                <label>Duração</label>
+                <input id="duracao" type="number" placeholder="Ex: 120 min">
+            </div>
+
+            <div class="input-group">
+                <label>Faixa Etária</label>
+                <input id="faixa-etaria" type="text" placeholder="Ex: 14 anos">
+            </div>
+
+            <button onclick="cadastrarFilme(event)" type="submit">Cadastrar Filme</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

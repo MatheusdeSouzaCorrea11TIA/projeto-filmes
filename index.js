@@ -10,6 +10,7 @@ const database = mysql.createPool({
     host: "benserverplex.ddns.net",
     user: "alunos",
     password: "senhaAlunos",
+    
     database: "alunos_filmes_03MA"
 })
 
