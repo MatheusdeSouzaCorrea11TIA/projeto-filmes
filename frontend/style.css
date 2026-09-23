@@ -11,3 +11,17 @@ div {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.anchors {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    a {
+        background: red;
+        color: blue;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem;
+    }
+}
