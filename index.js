@@ -4,11 +4,7 @@ import mysql from "mysql2"
 
 const app = express()
 app.use(express.json())
-app.use(cors({
-    origin: '*', // Permite requisições de qualquer origem (Live Server, Localhost, etc)
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Accept']
-}))
+app.use(cors())
 
 const database = mysql.createPool({
     host: "benserverplex.ddns.net",

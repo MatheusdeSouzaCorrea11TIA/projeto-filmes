@@ -2,8 +2,8 @@
 // Ajuste a BASE_URL e as rotas abaixo para bater com o seu backend.
 const BASE_URL = "https://projeto-filmes-backend-16i9n5m3i.vercel.app";
 const ROUTES = {
-  listar: () => `${BASE_URL}/listar-filmes`,
-  atualizar: (id) => `${BASE_URL}/atualizar-filme/${id}`,
+  listar: () => `${BASE_URL}/`,
+  atualizar: (id) => `${BASE_URL}/editar-filme/${id}`,
 };
 
 let filmes = [];
