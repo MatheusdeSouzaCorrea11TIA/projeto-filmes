@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import mysql from "mysql2"
+import dotenv from "dotenv"
+dotenv.config()
 
 const app = express()
 app.use(express.json())
@@ -89,6 +91,6 @@ app.delete("/deletar-filme/:id", (request, response) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor rodando em http://localhost:3000")
 })
